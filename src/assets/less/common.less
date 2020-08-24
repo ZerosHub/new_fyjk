@@ -1,0 +1,74 @@
+html,body{
+  height: 100%;
+  overflow-y: hidden;
+}
+body{
+  font-size: 16px;
+}
+
+#vueBody{
+  height: 100%;
+  overflow-y: auto;
+}
+
+#vueContent{
+  min-width: 900px;
+  height: 100%;
+  .top{
+    padding-left: 50px;
+    position: relative;
+    &:before{
+      content:'';
+      width: 71px;
+      height: 71px;
+      background: url("../images/img_jx.png") no-repeat;
+      background-size: 100% 100%;
+      position: absolute;
+      left: -9px;
+      top:-9px;
+    }
+    .inner{
+      width: 100%;
+      background: #fff;
+      height: 50px;
+      padding:0 15px;
+      box-sizing: border-box;
+      .left{
+        .title{
+          line-height: 50px;
+          padding:0 35px;
+          &.data_icon{
+            background: url("../images/img_data_icon.png") no-repeat;
+            background-size: 23px 23px;
+            background-position: 0 center;
+          }
+          &.stu_icon{
+            background: url("../images/img_xs_icon.png") no-repeat;
+            background-size: 23px 23px;
+            background-position: 0 center;
+          }
+        }
+      }
+    }
+  }
+  .view{
+    background: #e1ebf2;
+    min-height: calc(100% - 50px);
+  }
+}
+
+.fl{
+  float: left;
+}
+
+.fr{
+  float: right;
+}
+
+
+.el-pagination{
+  text-align: right;
+  /deep/ .el-pagination__total{
+    float: left;
+  }
+}
